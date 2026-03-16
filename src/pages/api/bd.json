@@ -1,117 +1,156 @@
 {
-    "livros": [
-        {
-            "id": "a3f2e9d1-6b7c-4f8a-9d12-1c3b5e7f9a01",
-            "titulo": "Dom Casmurro",
-            "autor": "Machado de Assis",
-            "genero": "Romance",
-            "quantidade": 5,
-            "qtdEmprestados": 0
-        },
-        {
-            "id": "b4c1d8e2-7a6f-4b9c-8e23-2d4c6f8a0b12",
-            "titulo": "O Alquimista",
-            "autor": "Paulo Coelho",
-            "genero": "Ficção",
-            "quantidade": 4,
-            "qtdEmprestados": 0
-        },
-        {
-            "id": "c5d2e7f3-8b5a-4c0d-9f34-3e5d7a9b1c23",
-            "titulo": "Capitães da Areia",
-            "autor": "Jorge Amado",
-            "genero": "Romance",
-            "quantidade": 6,
-            "qtdEmprestados": 0
-        },
-        {
-            "id": "d6e3f6a4-9c4b-4d1e-af45-4f6e8b0c2d34",
-            "titulo": "A Hora da Estrela",
-            "autor": "Clarice Lispector",
-            "genero": "Drama",
-            "quantidade": 3,
-            "qtdEmprestados": 0
-        },
-        {
-            "id": "e7f4a5b5-ad3c-4e2f-b056-5a7f9c1d3e45",
-            "titulo": "Vidas Secas",
-            "autor": "Graciliano Ramos",
-            "genero": "Regionalismo",
-            "quantidade": 5,
-            "qtdEmprestados": 0
-        },
-        {
-            "id": "f8a5b4c6-be2d-4f30-c167-6b8a0d2e4f56",
-            "titulo": "Memórias Póstumas de Brás Cubas",
-            "autor": "Machado de Assis",
-            "genero": "Romance",
-            "quantidade": 4,
-            "qtdEmprestados": 0
-        },
-        {
-            "id": "09b6c3d7-cf1e-4031-d278-7c9b1e3f5a67",
-            "titulo": "O Cortiço",
-            "autor": "Aluísio Azevedo",
-            "genero": "Naturalismo",
-            "quantidade": 4,
-            "qtdEmprestados": 0
-        },
-        {
-            "id": "1ac7d2e8-d01f-4132-e389-8dac2f4a6b78",
-            "titulo": "Iracema",
-            "autor": "José de Alencar",
-            "genero": "Romance",
-            "quantidade": 3,
-            "qtdEmprestados": 0
-        },
-        {
-            "id": "2bd8e1f9-e120-4233-f49a-9ebd3a5b7c89",
-            "titulo": "Grande Sertão: Veredas",
-            "autor": "João Guimarães Rosa",
-            "genero": "Romance",
-            "quantidade": 2,
-            "qtdEmprestados": 0
-        },
-        {
-            "id": "3ce9f0a1-f231-4334-a5ab-afce4b6c8d90",
-            "titulo": "Ensaio sobre a Cegueira",
-            "autor": "José Saramago",
-            "genero": "Ficção",
-            "quantidade": 5,
-            "qtdEmprestados": 0
-        }
-    ],
-    "emprestimos": [],
-    "usuarios": [
-        {
-            "id": "a3f2e9d1-6b7c-4f8a-9d12-1ddd5e7f9a01",
-            "nome": "Ana Souza",
-            "email": "ana.souza@exemplo.com",
-            "telefone": "(11) 98888-1001"
-        },
-        {
-            "id": "b4c1d8e2-7a6f-4b9c-8e23-2ddd6f8a0b12",
-            "nome": "Bruno Lima",
-            "email": "bruno.lima@exemplo.com",
-            "telefone": "(21) 97777-2002"
-        },
-        {
-            "id": "c5d2e7f3-8b5a-4c0d-9f34-3ddd7a9b1c23",
-            "nome": "Carla Mendes",
-            "email": "carla.mendes@exemplo.com",
-            "telefone": "(31) 96666-3003"
-        },
-        {
-            "id": "d6e3f6a4-9c4b-4d1e-af45-4fdddb0c2d34",
-            "nome": "Diego Rocha",
-            "email": "diego.rocha@exemplo.com",
-            "telefone": "(41) 95555-4004"
-        },
-        {
-            "id": "e7f4a5b5-ad3c-4e2f-b056-5adddc1d3e45",
-            "nome": "Eduarda Alves",
-            "email": "eduarda.alves@exemplo.com",
-            "telefone": "(51) 94444-5005"
-        }
-    ]
+  "livros": [
+    {
+      "id": "a3f2e9d1-6b7c-4f8a-9d12-1c3b5e7f9a01",
+      "titulo": "Dom Casmurro",
+      "autor": "Machado de Assis",
+      "genero": "Romance",
+      "quantidade": 5,
+      "qtdEmprestados": 0
+    },
+    {
+      "id": "b4c1d8e2-7a6f-4b9c-8e23-2d4c6f8a0b12",
+      "titulo": "O Alquimista",
+      "autor": "Paulo Coelho",
+      "genero": "Ficção",
+      "quantidade": 4,
+      "qtdEmprestados": 0
+    },
+    {
+      "id": "c5d2e7f3-8b5a-4c0d-9f34-3e5d7a9b1c23",
+      "titulo": "Capitães da Areia",
+      "autor": "Jorge Amado",
+      "genero": "Romance",
+      "quantidade": 6,
+      "qtdEmprestados": 0
+    },
+    {
+      "id": "d6e3f6a4-9c4b-4d1e-af45-4f6e8b0c2d34",
+      "titulo": "A Hora da Estrela",
+      "autor": "Clarice Lispector",
+      "genero": "Drama",
+      "quantidade": 3,
+      "qtdEmprestados": 0
+    },
+    {
+      "id": "e7f4a5b5-ad3c-4e2f-b056-5a7f9c1d3e45",
+      "titulo": "Vidas Secas",
+      "autor": "Graciliano Ramos",
+      "genero": "Regionalismo",
+      "quantidade": 5,
+      "qtdEmprestados": 0
+    },
+    {
+      "id": "f8a5b4c6-be2d-4f30-c167-6b8a0d2e4f56",
+      "titulo": "Memórias Póstumas de Brás Cubas",
+      "autor": "Machado de Assis",
+      "genero": "Romance",
+      "quantidade": 4,
+      "qtdEmprestados": 0
+    },
+    {
+      "id": "09b6c3d7-cf1e-4031-d278-7c9b1e3f5a67",
+      "titulo": "O Cortiço",
+      "autor": "Aluísio Azevedo",
+      "genero": "Naturalismo",
+      "quantidade": 4,
+      "qtdEmprestados": 0
+    },
+    {
+      "id": "1ac7d2e8-d01f-4132-e389-8dac2f4a6b78",
+      "titulo": "Iracema",
+      "autor": "José de Alencar",
+      "genero": "Romance",
+      "quantidade": 3,
+      "qtdEmprestados": 0
+    },
+    {
+      "id": "2bd8e1f9-e120-4233-f49a-9ebd3a5b7c89",
+      "titulo": "Grande Sertão: Veredas",
+      "autor": "João Guimarães Rosa",
+      "genero": "Romance",
+      "quantidade": 2,
+      "qtdEmprestados": 0
+    },
+    {
+      "id": "3ce9f0a1-f231-4334-a5ab-afce4b6c8d90",
+      "titulo": "Ensaio sobre a Cegueira",
+      "autor": "José Saramago",
+      "genero": "Ficção",
+      "quantidade": 5,
+      "qtdEmprestados": 0
+    }
+  ],
+  "emprestimos": [
+    {
+      "id": "977d1c85-6d21-4c3b-affe-34cd1542ed1a",
+      "usuarioId": "e7f4a5b5-ad3c-4e2f-b056-5adddc1d3e45",
+      "livrosIds": [
+        "a3f2e9d1-6b7c-4f8a-9d12-1c3b5e7f9a01"
+      ],
+      "dataEmprestimo": "2026-03-16T22:48:19.124Z",
+      "dataDevolucao": "2026-03-16T22:48:32.756Z",
+      "status": "concluído"
+    },
+    {
+      "id": "a51a4113-47f3-48ec-8a09-76bab0987339",
+      "usuarioId": "b4c1d8e2-7a6f-4b9c-8e23-2ddd6f8a0b12",
+      "livrosIds": [
+        "a3f2e9d1-6b7c-4f8a-9d12-1c3b5e7f9a01",
+        "b4c1d8e2-7a6f-4b9c-8e23-2d4c6f8a0b12",
+        "c5d2e7f3-8b5a-4c0d-9f34-3e5d7a9b1c23"
+      ],
+      "dataEmprestimo": "2026-03-16T22:48:27.996Z",
+      "dataDevolucao": "2026-03-16T22:48:36.757Z",
+      "status": "concluído"
+    },
+    {
+      "id": "af0d245c-4df1-4364-8f51-b0828fbc5288",
+      "usuarioId": "a11c4e13-891b-4775-82a7-da36ea764a1f",
+      "livrosIds": [
+        "a3f2e9d1-6b7c-4f8a-9d12-1c3b5e7f9a01"
+      ],
+      "dataEmprestimo": "2026-03-16T22:49:26.203Z",
+      "dataDevolucao": "2026-03-16T22:49:34.531Z",
+      "status": "concluído"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "a3f2e9d1-6b7c-4f8a-9d12-1ddd5e7f9a01",
+      "nome": "Ana Souza",
+      "email": "ana.souza@exemplo.com",
+      "telefone": "(11) 98888-1001"
+    },
+    {
+      "id": "b4c1d8e2-7a6f-4b9c-8e23-2ddd6f8a0b12",
+      "nome": "Bruno Lima",
+      "email": "bruno.lima@exemplo.com",
+      "telefone": "(21) 97777-2002"
+    },
+    {
+      "id": "c5d2e7f3-8b5a-4c0d-9f34-3ddd7a9b1c23",
+      "nome": "Carla Mendes",
+      "email": "carla.mendes@exemplo.com",
+      "telefone": "(31) 96666-3003"
+    },
+    {
+      "id": "d6e3f6a4-9c4b-4d1e-af45-4fdddb0c2d34",
+      "nome": "Diego Rocha",
+      "email": "diego.rocha@exemplo.com",
+      "telefone": "(41) 95555-4004"
+    },
+    {
+      "id": "e7f4a5b5-ad3c-4e2f-b056-5adddc1d3e45",
+      "nome": "Eduarda Alves",
+      "email": "eduarda.alves@exemplo.com",
+      "telefone": "(51) 94444-5005"
+    },
+    {
+      "id": "a11c4e13-891b-4775-82a7-da36ea764a1f",
+      "nome": "Lorena Lobo",
+      "email": "lorenagatinha@gmail.com",
+      "telefone": "42364823423567945"
+    }
+  ]
 }

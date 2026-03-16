@@ -1,11 +1,12 @@
 import fs from 'fs';
 import path from 'path';
 import { v4 as uuidv4 } from 'uuid';
+import { NextApiRequest, NextApiResponse } from 'next';
 
 // Caminho absoluto para o arquivo de dados
 const filePath = path.join(process.cwd(), 'src', 'pages', 'api', 'bd.json');
 
-export default function handler(req, res) {
+export default function handler(req: NextApiRequest, res: NextApiResponse) {
     type Livro = {
         titulo: string;
         autor: string;

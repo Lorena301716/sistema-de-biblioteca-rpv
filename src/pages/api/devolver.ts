@@ -1,19 +1,38 @@
 import fs from "fs";
 import path from "path";
+import { NextApiRequest, NextApiResponse } from "next";
 
 const filePath = path.join(process.cwd(), "src", "pages", "api", "bd.json");
 
-export default function handler(req, res) {
+interface Livro {
+  id: string;
+  titulo: string;
+  autor: string;
+  genero: string;
+  quantidade: number;
+  qtdEmprestados: number;
+}
+
+interface Emprestimo {
+  id: string;
+  usuarioId: string;
+  livrosIds: string[];
+  dataEmprestimo: string;
+  dataDevolucao: string | null;
+  status: "ativo" | "concluído";
+}
+
+export default function handler(req: NextApiRequest, res: NextApiResponse) {
   const jsonData = fs.readFileSync(filePath, "utf-8");
   const parsed = JSON.parse(jsonData);
 
-  const livros = parsed.livros || [];
-  const emprestimos = parsed.emprestimos || [];
+  const livros: Livro[] = parsed.livros || [];
+  const emprestimos: Emprestimo[] = parsed.emprestimos || [];
 
   const { emprestimoId, livrosIds } = req.body;
 
   // localizar empréstimo
-  const emprestimo = emprestimos.find((e) => e.id === emprestimoId);
+  const emprestimo = emprestimos.find((e: Emprestimo) => e.id === emprestimoId);
 
   if (!emprestimo || emprestimo.status !== "ativo") {
     return res.status(400).json({ mensagem: "Empréstimo não encontrado ou já concluído." });
@@ -29,8 +48,8 @@ export default function handler(req, res) {
   }
 
   // atualizar qtdEmprestados
-  livrosIds.forEach((id) => {
-    const livro = livros.find((l) => l.id === id);
+  livrosIds.forEach((id: string) => {
+    const livro = livros.find((l: Livro) => l.id === id);
     if (livro && livro.qtdEmprestados > 0) {
       livro.qtdEmprestados -= 1;
     }
@@ -38,7 +57,7 @@ export default function handler(req, res) {
 
   // verificar se todos os livros foram devolvidos
   const todosDevolvidos = emprestimo.livrosIds.every(
-    (id) => livrosIds.includes(id)
+    (id: string) => livrosIds.includes(id)
   );
 
   if (todosDevolvidos) {
